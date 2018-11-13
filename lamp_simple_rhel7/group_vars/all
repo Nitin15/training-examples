@@ -5,3 +5,9 @@ httpd_port: 80
 ntpserver: 192.168.1.2
 repository: https://github.com/bennojoy/mywebapp.git
 serial_var: 0
+mysqlservice: mysqld
+mysql_port: 3306
+dbuser: foouser
+dbname: foodb
+upassword: abc
+
