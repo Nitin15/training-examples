@@ -12,10 +12,7 @@
 - name: create mariadb config file
   template: src=my.cnf.j2 dest=/etc/my.cnf
   notify: restart mariadb
-
-- debug: msg= "{{ lookup('datadir', './my.cnf.j2') }} template time"
-
-
+  
 - name: create mariadb log file
   file: path=/var/log/mysqld.log state=touch owner=mysql group=mysql mode=0775
 
