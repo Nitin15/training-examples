@@ -8,14 +8,14 @@
   - common
 
 - name: configure and deploy the database server
-  hosts: dbservers
+  hosts: all
   become: yes
 
   roles: 
   - db
 
 - name: configure and deploy the web server
-  hosts: webservers
+  hosts: all
   become: yes
 
   roles:
